@@ -51,7 +51,7 @@ public class DBGolfer {
 
         try {
             Criteria cr = session.createCriteria(Golfer.class);
-            cr.add(Restrictions.eq("name", name));
+            cr.add(Restrictions.eq("firstName", name));
             result = (Golfer)cr.uniqueResult();
         } catch(HibernateException e){
             e.printStackTrace();
