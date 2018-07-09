@@ -11,6 +11,13 @@ public class Runner {
 
         List<Golfer> golfers = DBGolfer.getAll();
 
+        Golfer harry = DBGolfer.findByName(golfer1.getFirstName());
+
+        System.out.println(harry.getFirstName());
+
         System.exit(0);
     }
+
+
+
 }
